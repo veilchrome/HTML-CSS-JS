@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Registrasi</title>
+    <link rel="icon" href="https://e7.pngegg.com/pngimages/832/647/png-clipart-logo-nerv-computer-icons-graphic-design-anime-text-logo-thumbnail.png" type="image/x-icon" />
+  </head>
+  <!-- membuat class dengan nama tengah untuk membuat text ke tengah dan memberi kustomisasi-->
+  <style>
+    .tengah {
+      text-align: center;
+      color: aliceblue;
+      background-color: brown;
+    }
+  </style>
+  <body style="background-color: mediumturquoise">
+    <h1 class="tengah">FORM REGISTRASI UJIAN KESABARAN</h1>
+    <img src="https://c4.wallpaperflare.com/wallpaper/75/319/669/background-hd-nature-pics-1920x1200-wallpaper-preview.jpg" alt="Nature" />
+    <h3>Ini adalah ujian kesabaran, jadi panitia harap peserta bisa sabar</h3>
+    <form action="contact.php" method="POST">
+      <!-- membuat field atau border kotak tipis di html-->
+      <fieldset>
+        <legend style="text-align: center">REGISTRASI</legend>
+        <p>
+          <label>Nama:</label>
+          <input type="text" name="nama" placeholder="Nama lengkap..." />
+        </p>
+        <p>
+          <label>Username:</label>
+          <input type="text" name="username" placeholder="Username..." />
+        </p>
+        <p>
+          <label>Email:</label>
+          <input type="email" name="email" placeholder="Your email..." />
+        </p>
+        <p>
+          <label>Password:</label>
+          <input type="password" name="password" placeholder="Password..." />
+        </p>
+        <p>
+          <label>Jenis kelamin:</label>
+          <label><input type="radio" name="jenis_kelamin" value="laki-laki" /> Laki-laki</label>
+          <label><input type="radio" name="jenis_kelamin" value="perempuan" /> Perempuan</label>
+        </p>
+        <p>
+          <label>Agama:</label>
+          <select name="agama">
+            <option value="islam">Islam</option>
+            <option value="kristen">Kristen</option>
+            <option value="hindu">Hindu</option>
+            <option value="budha">Budha</option>
+          </select>
+        </p>
+        <p>
+          <label>Biografi:</label>
+          <textarea name="biografi"></textarea>
+        </p>
+        <p>
+          <input type="submit" name="submit" value="Daftar" />
+        </p>
+        <p>
+          <label>Kesan dan Pesan Menjadi Peserta Ujian Kesabaran</label>
+          <textarea name="Kesan dan Pesan"></textarea>
+        </p>
+        <p>
+          <input type="submit" name="submit" value="Daftar" />
+        </p>
+      </fieldset>
+    </form>
+  </body>
+</html>
